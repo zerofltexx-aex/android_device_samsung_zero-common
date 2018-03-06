@@ -162,6 +162,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=2m \
     dalvik.vm.heapmaxfree=8m
 
+# Varius
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.performance.tuning=1 \
+pm.sleep_mode=1 \
+ro.ril.disable.power.collapse=1
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
