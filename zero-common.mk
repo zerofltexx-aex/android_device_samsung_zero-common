@@ -32,7 +32,7 @@ endif
 # we do this little trick to fall back to the xxhdpi version
 # if the 640dpi doesn't exist.
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := 640dpi
+PRODUCT_AAPT_PREF_CONFIG := 560dpi
 # A list of dpis to select prebuilt apk, in precedence order.
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
