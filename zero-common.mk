@@ -155,7 +155,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
     
-  # Dalvik/Art
+# Dalvik/Art
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.dex2oat_thread_count=4 \
     dalvik.vm.heapstartsize=8m \
@@ -204,7 +204,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # media build properties
 PRODUCT_PROPERTY_OVERRIDES += \
 	media.sf.omx-plugin=libffmpeg_omx.so,libsomxcore.so 
-
 
 # Radio
 PRODUCT_PACKAGES += \
