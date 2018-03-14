@@ -34,13 +34,6 @@
     ro.hwui.text_large_cache_height=4096
 
 #
-# Varius
-#
-    debug.performance.tuning=1
-    pm.sleep_mode=1
-    ro.ril.disable.power.collapse=1
-
-#
 # System
 #
     ro.sf.lcd_density=560
