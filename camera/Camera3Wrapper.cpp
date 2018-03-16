@@ -100,7 +100,9 @@ static int camera3_initialize(const camera3_device_t *device, const camera3_call
     if (!device)
         return -1;
 
-    return VENDOR_CALL(device, initialize, callback_ops);
+    int rc = VENDOR_CALL(device, initialize, callback_ops);
+    ALOGV("%s::out(%d)", __FUNCTION__, rc);
+    return rc;
 }
 
 static int camera3_configure_streams(const camera3_device *device, camera3_stream_configuration_t *stream_list)
@@ -111,7 +113,9 @@ static int camera3_configure_streams(const camera3_device *device, camera3_strea
     if (!device)
         return -1;
 
-    return VENDOR_CALL(device, configure_streams, stream_list);
+    int rc = VENDOR_CALL(device, configure_streams, stream_list);
+    ALOGV("%s::out(%d)", __FUNCTION__, rc);
+    return rc;
 }
 
 static int camera3_register_stream_buffers(const camera3_device *device, const camera3_stream_buffer_set_t *buffer_set)
@@ -122,7 +126,9 @@ static int camera3_register_stream_buffers(const camera3_device *device, const c
     if (!device)
         return -1;
 
-    return VENDOR_CALL(device, register_stream_buffers, buffer_set);
+    int rc = VENDOR_CALL(device, register_stream_buffers, buffer_set);
+    ALOGV("%s::out(%d)", __FUNCTION__, rc);
+    return rc;
 }
 
 static const camera_metadata_t *camera3_construct_default_request_settings(const camera3_device_t *device, int type)
@@ -146,7 +152,9 @@ static int camera3_process_capture_request(const camera3_device_t *device, camer
     if (!device)
         return -1;
 
-    return VENDOR_CALL(device, process_capture_request, request);
+    int rc = VENDOR_CALL(device, process_capture_request, request);
+    ALOGV("%s::out(%d)", __FUNCTION__, rc);
+    return rc;
 }
 
 static void camera3_get_metadata_vendor_tag_ops(const camera3_device *device, vendor_tag_query_ops_t* ops)
@@ -179,7 +187,9 @@ static int camera3_flush(const camera3_device_t* device)
     if (!device)
         return -1;
 
-    return VENDOR_CALL(device, flush);
+    int rc = VENDOR_CALL(device, flush);
+    ALOGV("%s::out(%d)", __FUNCTION__, rc);
+    return rc;
 }
 
 static int camera3_device_close(hw_device_t *device)
