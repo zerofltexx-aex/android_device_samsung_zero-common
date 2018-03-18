@@ -144,8 +144,8 @@ PRODUCT_PACKAGES += \
     libstlport
 
 # MDNIE
-#PRODUCT_PACKAGES += \
-#    AdvancedDisplay
+PRODUCT_PACKAGES += \
+    AdvancedDisplay
 
 # Media profile
 PRODUCT_COPY_FILES += \
